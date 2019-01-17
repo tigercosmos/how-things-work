@@ -1,0 +1,41 @@
+{
+    "title": "How Things Work: Science & Technology 101",
+    "description": "a hundred and a night, leading you to build up a picture of science and technology",
+    "author": "tigercosmos",
+    "plugins": [
+        "expandable-chapters",
+        "github-buttons@3.0.0",
+        "github",
+        "disqus",
+        "codeblock-filename",
+        "custom-favicon",
+        "tags"
+    ],
+    "pluginsConfig": {
+        "github-buttons": {
+            "buttons": [{
+                "user": "tigercosmos",
+                "repo": "how-things-work",
+                "type": "star",
+                "size": "small",
+                "count": true
+            }, {
+                "user": "tigercosmos",
+                "type": "follow",
+                "width": "180",
+                "size": "small",
+                "count": true
+            }]
+        },
+        "tags": {
+            "placement": "bottom"
+        },
+        "github": {
+            "url": "https://github.com/tigercosmos/"
+        },
+        "disqus": {
+            "shortName": "how-things-work"
+        },
+        "favicon": "./favicon.ico"
+    }
+}
