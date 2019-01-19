@@ -1,6 +1,6 @@
 # Revision Control
 
-It's a deep night, and the man are still at the office, being in deep water over the crash program. Everything goes wrong. He don't ever know why the code cannot run as usual. Unfortunately, he have forgotten what he had changed, regardless of the changed must be of vital to cause the incident.
+It's a deep night, and the man are still at the office, being in deep water over the crash program. Everything goes wrong. He don't ever know why the code cannot run as usual. Unfortunately, he have forgotten what he had changed, regardless of the changed must be of paramount importance to cause the incident.
 
 It is a nightmare for all developers that the software gets out of control, so they create a tool to doing revision control, called version-control software, such as [GIT](https://en.wikipedia.org/wiki/Git) or [SVN](https://en.wikipedia.org/wiki/Apache_Subversion). When programers develop programs, there would be many visions, such as "the big bang", "add new feature A", "fix big bug of B." Engineers keep these versions functionality-completed, so each version should be able to run well independently, which means you can switch to any version without any risk of crash. With the benefit of version control, programers can modify codes at their disposal now. Once they make crashes on the program, they can easily reset the code to the last version.
 
