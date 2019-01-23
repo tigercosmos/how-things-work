@@ -1,0 +1,351 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Revision Control · How Things Work: Science & Technology 101</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tigercosmos">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tags/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="browsing-websites.html" />
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tigercosmos","repo":"how-things-work","type":"star","size":"small","count":true},{"user":"tigercosmos","type":"follow","width":"180","size":"small","count":true}]};
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84804118-6"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-84804118-6');</script>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Posts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="revision-control.html">
+            
+                <a href="revision-control.html">
+            
+                    
+                    Revision Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="browsing-websites.html">
+            
+                <a href="browsing-websites.html">
+            
+                    
+                    Browsing Websites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chaos.html">
+            
+                <a href="chaos.html">
+            
+                    
+                    Chaos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../tags.html">
+            
+                <a href="../tags.html">
+            
+                    
+                    Tags List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Revision Control</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="revision-control">Revision Control</h1>
+<p>2019/1/18</p>
+<p>It&apos;s a late night, and the man is still at the office, being in deep water over the crashed program. Everything goes wrong. He doesn&apos;t even know why the code cannot run as usual. Unfortunately, he has forgotten what he had changed, regardless of the changes, which must be of paramount importance to the incident.</p>
+<p>It is a nightmare for all developers that the software gets out of control, so they create a tool for doing revision control, called version-control software, such as <a href="https://en.wikipedia.org/wiki/Git" target="_blank">GIT</a> or <a href="https://en.wikipedia.org/wiki/Apache_Subversion" target="_blank">SVN</a>. When programmers develop programs, there would be many versions, such as &quot;the big bang,&quot; &quot;add new feature A,&quot; &quot;fix a big bug of B.&quot; Engineers keep these versions functionality-completed, so each version should be able to run well independently, which means you can switch to any version without any risk of the crash. With the benefit of version control, programmers can modify codes at their disposal now. Once they make crashes on the program, they can easily reset the code to the last version.</p>
+<p>Revision control also enables the collaboration of developing programs by many engineers. There are some features and bugs, and there will be many versions stand-alone. In this case, a version calls a <em>commit</em> in software engineering terminology. Each programmer heads on one of the tasks and creates a commit. Then the version-control tool like GIT can merge those commits into a new version.</p>
+<p>Revision control is everywhere in software development. No matter projects in companies or open source communities, almost all use version-control tool. You might hear of <a href="https://github.com/" target="_blank">Github</a>. It&apos;s the biggest platform of open source projects based on GIT. Almost none of the programmers don&apos;t have a Github account--just like everyone has a Facebook account. The man works off early today because he has used the revision-control tool.</p><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="../tags.html#git">git</a> <a href="../tags.html#software-engineering">software-engineering</a> <a href="../tags.html#revision-control">revision-control</a></p></div><!-- tagsstop -->
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="browsing-websites.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Browsing Websites">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Revision Control","level":"1.2.1","depth":2,"next":{"title":"Browsing Websites","level":"1.2.2","depth":2,"path":"post/browsing-websites.md","ref":"post/browsing-websites.md","articles":[]},"previous":{"title":"Posts","level":"1.2","depth":1,"ref":"","articles":[{"title":"Revision Control","level":"1.2.1","depth":2,"path":"post/revision-control.md","ref":"post/revision-control.md","articles":[]},{"title":"Browsing Websites","level":"1.2.2","depth":2,"path":"post/browsing-websites.md","ref":"post/browsing-websites.md","articles":[]},{"title":"Chaos","level":"1.2.3","depth":2,"path":"post/chaos.md","ref":"post/chaos.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","github-buttons@3.0.0","github","disqus","codeblock-filename","custom-favicon","tags","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"how-things-work"},"github":{"url":"https://github.com/tigercosmos/"},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./favicon.ico","codeblock-filename":{},"github-buttons":{"buttons":[{"user":"tigercosmos","repo":"how-things-work","type":"star","size":"small","count":true},{"user":"tigercosmos","type":"follow","width":"180","size":"small","count":true}]},"custom-favicon":{},"tags":{"placement":"bottom"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"tigercosmos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"How Things Work: Science & Technology 101","gitbook":"*","description":"a hundred and a night, leading you to build up a picture of science and technology"},"file":{"path":"post/revision-control.md","mtime":"2019-01-23T17:22:42.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-23T17:24:05.865Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
