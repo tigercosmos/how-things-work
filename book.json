@@ -9,7 +9,8 @@
         "disqus",
         "codeblock-filename",
         "custom-favicon",
-        "tags"
+        "tags",
+        "mathjax-commonhtml"
     ],
     "pluginsConfig": {
         "github-buttons": {
